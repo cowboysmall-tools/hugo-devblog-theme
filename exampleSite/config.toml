@@ -1,0 +1,23 @@
+# Page settings
+
+baseURL = "http://example.org/"
+languageCode = "en"
+title = ""
+theme = "hugo-devblog-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+
+
+
+[params]
+    author = "CowboySmall"
+    description = "DevBlog"
+
+
+
+
+    [params.profile]
+        enable = true
+        name = "Simon Doe"
+        tagline = "Senior Software Engineer"
+        avatar = "avatar.png"
