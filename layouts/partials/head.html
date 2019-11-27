@@ -16,9 +16,9 @@
         <!-- Plugin CSS -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
         <!-- Theme CSS -->
-        <link id="theme-style" rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/theme-1.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/css/theme-1.css" id="theme-style">
         <!-- Theme SCSS -->
         {{ $style := resources.Get "scss/theme-1.scss" | resources.ExecuteAsTemplate "scss/theme-1.scss" . | toCSS (dict "targetPath" "assets/css/theme-1.css") | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
+        <link rel="stylesheet" href="{{ $style.Permalink }}" id="theme-style">
 
     </head>
