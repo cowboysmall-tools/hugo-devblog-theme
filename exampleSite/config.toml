@@ -2,7 +2,7 @@
 
 baseURL = "http://example.org/"
 languageCode = "en"
-title = ""
+title = "Bootstrap 4 Blog Template For Developers"
 theme = "hugo-devblog-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
 
@@ -10,8 +10,8 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
 
 [params]
-    author = "CowboySmall"
-    description = "DevBlog"
+    author = "Xiaoying Riley at 3rd Wave Media"
+    description = "Blog Template"
 
 
 

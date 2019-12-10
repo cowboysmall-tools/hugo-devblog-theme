@@ -1,0 +1,20 @@
+
+        <section class="blog-list px-3 py-5 p-md-5">
+            <div class="container">
+
+                {{ range first 10 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+                <div class="item mb-5">
+                    <div class="media">
+                        <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="{{ .Site.BaseURL }}assets/images/blog/blog-post-thumb-1.jpg" alt="image">
+                        <div class="media-body">
+                            <h3 class="title mb-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
+                            <div class="intro">{{ .Summary | safeHTML }}</div>
+                            <a class="more-link" href="{{ .Permalink }}">Read more &rarr;</a>
+                        </div><!--//media-body-->
+                    </div><!--//media-->
+                </div><!--//item-->
+                {{ end }}
+
+            </div><!--//container-->
+        </section>
